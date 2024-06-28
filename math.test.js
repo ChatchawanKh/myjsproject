@@ -8,9 +8,9 @@ test("multiplies 2*3 to equal 6", () => {
 });
 
 test("divide 6/2 to equal 3", () => {
-  expect(divide(6, 2)).toBe(3);
+  expect(multiply(6, 2)).toBe(3);
 });
 
 test("divide by zero", () => {
-  expect((1, 0)).toThrow("Cant divide by zero");
+  expect(() => multiply(1, 0)).toThrow("Cant divide by zero");
 });
